@@ -1,332 +1,359 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
+<html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>RSVP - Nine &amp; Tom</title>
+<title>Nine &amp; Tom - A Celebration of Two Journeys</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&amp;family=DM+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "on-primary-container": "#949393",
-                      "surface-container": "#f0eee9",
-                      "primary-fixed-dim": "#c8c6c5",
-                      "outline": "#747878",
-                      "on-surface": "#1b1c19",
-                      "on-error": "#ffffff",
-                      "inverse-primary": "#c8c6c5",
-                      "on-error-container": "#93000a",
-                      "on-tertiary": "#ffffff",
-                      "surface-variant": "#e4e2dd",
-                      "background": "#fbf9f4",
-                      "on-background": "#1b1c19",
-                      "surface-bright": "#fbf9f4",
-                      "on-secondary-container": "#6c614e",
-                      "on-secondary": "#ffffff",
-                      "on-tertiary-fixed-variant": "#613f24",
-                      "on-surface-variant": "#444748",
-                      "on-secondary-fixed-variant": "#4f4534",
-                      "inverse-surface": "#30312e",
-                      "on-primary-fixed": "#1b1c1c",
-                      "primary-fixed": "#e4e2e1",
-                      "error": "#ba1a1a",
-                      "surface-container-highest": "#e4e2dd",
-                      "outline-variant": "#c4c7c7",
-                      "surface-container-low": "#f5f3ee",
-                      "secondary-container": "#eddec6",
-                      "on-primary": "#ffffff",
-                      "inverse-on-surface": "#f2f1ec",
-                      "primary-container": "#2c2c2c",
-                      "on-tertiary-container": "#b78a69",
-                      "surface-container-lowest": "#ffffff",
-                      "tertiary-fixed": "#ffdcc4",
-                      "tertiary-fixed-dim": "#efbc98",
-                      "on-primary-fixed-variant": "#474747",
-                      "surface": "#fbf9f4",
-                      "on-secondary-fixed": "#221a0c",
-                      "secondary-fixed-dim": "#d3c5ae",
-                      "secondary-fixed": "#f0e0c9",
-                      "primary": "#171818",
-                      "surface-container-high": "#eae8e3",
-                      "secondary": "#685d4a",
-                      "surface-tint": "#5f5e5e",
-                      "tertiary-container": "#43250c",
-                      "surface-dim": "#dbdad5",
-                      "on-tertiary-fixed": "#2f1501",
-                      "tertiary": "#2a1100",
-                      "error-container": "#ffdad6"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.125rem",
-                      "lg": "0.25rem",
-                      "xl": "0.5rem",
-                      "full": "0.75rem"
-              },
-              "spacing": {
-                      "gutter": "24px",
-                      "section-gap-desktop": "160px",
-                      "section-gap-mobile": "80px",
-                      "container-max": "1120px",
-                      "base": "8px"
-              },
-              "fontFamily": {
-                      "headline-sm": ["Playfair Display"],
-                      "body-md": ["DM Sans"],
-                      "headline-md": ["Playfair Display"],
-                      "display-lg": ["Playfair Display"],
-                      "display-lg-mobile": ["Playfair Display"],
-                      "label-caps": ["DM Sans"],
-                      "body-lg": ["DM Sans"]
-              },
-              "fontSize": {
-                      "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
-                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                      "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
-                      "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
-                      "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "400"}],
-                      "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
-                      "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}]
-              },
-              "animation": {
-                "fade-in-up": "fadeInUp 0.8s ease-out forwards",
-              },
-              "keyframes": {
-                "fadeInUp": {
-                  "0%": { opacity: "0", transform: "translateY(20px)" },
-                  "100%": { opacity: "1", transform: "translateY(0)" },
-                }
-              }
-      },
-          },
-        }
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-container": "#949393",
+                    "surface-container": "#f0eee9",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "outline": "#747878",
+                    "on-surface": "#1b1c19",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#c8c6c5",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#e4e2dd",
+                    "background": "#fbf9f4",
+                    "on-background": "#1b1c19",
+                    "surface-bright": "#fbf9f4",
+                    "on-secondary-container": "#6c614e",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#613f24",
+                    "on-surface-variant": "#444748",
+                    "on-secondary-fixed-variant": "#4f4534",
+                    "inverse-surface": "#30312e",
+                    "on-primary-fixed": "#1b1c1c",
+                    "primary-fixed": "#e4e2e1",
+                    "error": "#ba1a1a",
+                    "surface-container-highest": "#e4e2dd",
+                    "outline-variant": "#c4c7c7",
+                    "surface-container-low": "#f5f3ee",
+                    "secondary-container": "#eddec6",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f2f1ec",
+                    "primary-container": "#2c2c2c",
+                    "on-tertiary-container": "#b78a69",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed": "#ffdcc4",
+                    "tertiary-fixed-dim": "#efbc98",
+                    "on-primary-fixed-variant": "#474747",
+                    "surface": "#fbf9f4",
+                    "on-secondary-fixed": "#221a0c",
+                    "secondary-fixed-dim": "#d3c5ae",
+                    "secondary-fixed": "#f0e0c9",
+                    "primary": "#171818",
+                    "surface-container-high": "#eae8e3",
+                    "secondary": "#685d4a",
+                    "surface-tint": "#5f5e5e",
+                    "tertiary-container": "#43250c",
+                    "surface-dim": "#dbdad5",
+                    "on-tertiary-fixed": "#2f1501",
+                    "tertiary": "#2a1100",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "section-gap-desktop": "160px",
+                    "section-gap-mobile": "80px",
+                    "container-max": "1120px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "headline-sm": [
+                            "Playfair Display"
+                    ],
+                    "body-md": [
+                            "DM Sans"
+                    ],
+                    "headline-md": [
+                            "Playfair Display"
+                    ],
+                    "display-lg": [
+                            "Playfair Display"
+                    ],
+                    "display-lg-mobile": [
+                            "Playfair Display"
+                    ],
+                    "label-caps": [
+                            "DM Sans"
+                    ],
+                    "body-lg": [
+                            "DM Sans"
+                    ]
+            },
+            "fontSize": {
+                    "headline-sm": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-md": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-lg": [
+                            "64px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "40px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-caps": [
+                            "12px",
+                            {
+                                    "lineHeight": "1",
+                                    "letterSpacing": "0.1em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
     </script>
 <style>
-        .material-symbols-outlined {
-            font-family: 'Material Symbols Outlined';
-            font-weight: normal;
-            font-style: normal;
-            font-size: 24px;
-            line-height: 1;
-            letter-spacing: normal;
-            text-transform: none;
-            display: inline-block;
-            white-space: nowrap;
-            word-wrap: normal;
-            direction: ltr;
-            -webkit-font-feature-settings: 'liga';
-            -webkit-font-smoothing: antialiased;
+        .parallax-wrapper {
+            perspective: 1000px;
         }
-        
-        /* Custom form reset for minimal Japandi inputs */
-        input[type="text"], input[type="email"], textarea, select {
-            background-color: transparent;
-            border: none;
-            border-bottom: 1px solid theme('colors.outline-variant');
-            border-radius: 0;
-            padding: 12px 0;
-            color: theme('colors.on-surface');
-            box-shadow: none !important;
-            transition: border-color 0.3s ease;
+        .parallax-image {
+            transition: transform 0.1s ease-out;
+            will-change: transform;
         }
-        input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focus {
-            outline: none;
-            border-bottom: 1px solid theme('colors.primary');
-            box-shadow: none !important;
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, visibility;
         }
-        select {
-            appearance: none;
-            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-            background-repeat: no-repeat;
-            background-position: right 0 center;
-            background-size: 16px;
-            padding-right: 24px;
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
         }
     </style>
 </head>
-<body class="bg-background text-on-background font-body-md text-body-md antialiased flex flex-col min-h-screen">
-<!-- TopNavBar JSON Implementation -->
-<nav class="fixed top-0 w-full z-50 bg-background/80 dark:bg-background/80 backdrop-blur-md border-b border-outline-variant/30 flat no shadows">
+<body class="bg-background text-on-background antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 dark:bg-background/80 backdrop-blur-md border-b border-outline-variant/30 transition-all duration-300" id="navbar">
 <div class="max-w-container-max mx-auto px-gutter flex justify-between items-center h-20">
-<!-- Brand Logo -->
-<a class="font-headline-sm text-headline-sm tracking-widest text-primary dark:text-primary-fixed" href="#">
-                NINE &amp; TOM
-            </a>
-<!-- Navigation Links (Desktop) -->
-<ul class="hidden md:flex space-x-8 items-center">
-<li><a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors hover:opacity-70 transition-opacity duration-300" href="#">Our Story</a></li>
-<li><a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors hover:opacity-70 transition-opacity duration-300" href="#">Events</a></li>
-<li><a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors hover:opacity-70 transition-opacity duration-300" href="#">Gallery</a></li>
-<!-- Active Nav Item -->
-<li><a class="font-label-caps text-label-caps text-primary dark:text-primary-fixed border-b border-primary dark:border-primary-fixed pb-1 hover:opacity-70 transition-opacity duration-300 Active: scale-95 transition-transform duration-200" href="#">RSVP</a></li>
-</ul>
-<!-- Trailing Action -->
-<a class="hidden md:inline-block font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">
-                Registry
-            </a>
-<!-- Mobile Menu Toggle (Simplified placeholder for visual completeness) -->
-<button class="md:hidden text-primary">
+<!-- Brand -->
+<a class="font-headline-sm text-headline-sm tracking-widest text-primary dark:text-primary-fixed hover:opacity-70 transition-opacity duration-300" href="#">NINE &amp; TOM</a>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors hover:opacity-70 transition-opacity duration-300" href="#">Our Story</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors hover:opacity-70 transition-opacity duration-300" href="#">Events</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors hover:opacity-70 transition-opacity duration-300" href="#">Gallery</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors hover:opacity-70 transition-opacity duration-300" href="#">RSVP</a>
+</div>
+<!-- Primary Action -->
+<a class="hidden md:inline-flex bg-primary text-on-primary px-6 py-3 rounded hover:opacity-90 transition-opacity font-label-caps text-label-caps" href="#">Registry</a>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Toggle menu" class="md:hidden text-primary">
 <span class="material-symbols-outlined" data-icon="menu">menu</span>
 </button>
 </div>
 </nav>
-<!-- Main Canvas -->
-<main class="flex-grow pt-32 pb-section-gap-desktop flex flex-col items-center justify-center">
-<div class="max-w-2xl w-full px-gutter mx-auto opacity-0 animate-fade-in-up" style="animation-delay: 0.2s;">
-<!-- Page Header -->
-<div class="text-center mb-16">
-<h1 class="font-display-lg text-display-lg text-primary mb-4">Répondez s'il vous plaît</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant">Kindly reply by the fifteenth of September.</p>
+<main class="pt-20">
+<!-- Hero Section with Parallax -->
+<section class="relative min-h-[921px] flex flex-col items-center justify-center px-gutter overflow-hidden parallax-wrapper">
+<div class="absolute inset-0 z-0 bg-surface-container-low opacity-50"></div>
+<div class="relative z-10 text-center mb-12">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-4 tracking-tight">Nine &amp; Tom</h1>
+<p class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Are getting married</p>
 </div>
-<!-- RSVP Form Card (Japandi Warm Minimalist style) -->
-<div class="bg-surface-container-low border border-outline-variant/30 rounded p-8 md:p-12 relative overflow-hidden">
-<div class="absolute inset-0 bg-surface-container-low z-10 flex flex-col items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out" id="success-message">
-<h2 class="font-headline-md text-headline-md text-primary mb-4">Thank You</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant text-center">Your response has been recorded.<br/>We look forward to celebrating with you.</p>
+<div class="relative z-10 w-full max-w-2xl aspect-[3/4] md:aspect-[4/3] overflow-hidden rounded shadow-sm border border-outline-variant/30 bg-surface-container mx-auto" id="parallax-container">
+<img alt="Nine and Tom" class="w-full h-full object-cover parallax-image scale-110" data-alt="A high-fashion, editorial style engagement portrait of a modern couple. Warm minimalist Japandi aesthetic with soft natural light and subtle earth tones. The composition is asymmetrical, emphasizing negative space and quiet intimacy. Shot on medium format film stock." id="hero-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxbuBvFxgOJLzVZZu25NTHH__iA6GuxdDIAyunTtfdiON-F9ogFsDq9x_kF9or1hKm1Cwf-uflpoushgSEp5Boe56Xp5cM6HVnhOE9AI2LO8WAYcDqQV8_G3d_COF0fUxtbzg5qPGr4RrE2Yz_1SoGKvVSZZQ6FpAUcJqlqsRXPSxq14v_CZB4JVLG-otXj7DQfrCbP0i0vi8BZgcog4fBEc0MdzFkF3C6hHcHj_1jRSa6apo-RCYxesVZxAhpbz4gE1X7Xq_Sy1Y"/>
 </div>
-<form action="#" class="space-y-12 transition-opacity duration-500 ease-in-out" id="rsvp-form" method="POST">
-<!-- Names -->
-<div class="space-y-8">
-<div>
-<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2 uppercase tracking-widest" for="names">Name(s) of Guest(s)</label>
-<input class="w-full font-body-lg text-body-lg" id="names" name="names" placeholder="M. &amp; Mme. Dupont" required="" type="text"/>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
+<span class="font-label-caps text-label-caps text-secondary">Scroll to explore</span>
+<span class="material-symbols-outlined text-secondary animate-bounce" data-icon="arrow_downward">arrow_downward</span>
 </div>
-<div>
-<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2 uppercase tracking-widest" for="email">Email Address</label>
-<input class="w-full font-body-lg text-body-lg" id="email" name="email" placeholder="for event updates" required="" type="email"/>
+</section>
+<!-- Welcome / Minimalist Text Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop px-gutter fade-in-section">
+<div class="max-w-3xl mx-auto text-center">
+<span class="material-symbols-outlined text-secondary mb-6 text-3xl opacity-60" data-icon="favorite">favorite</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-8">A union of two families, two cultures, and two hearts.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    We are thrilled to invite you to celebrate our wedding. Blending the rich traditions of our Thai and Vietnamese heritages, we look forward to sharing this intimate and joyous occasion with our closest friends and family. Expect an evening of warmth, exquisite food, and deliberate, quiet moments of connection.
+                </p>
+<div class="mt-12 w-px h-24 bg-outline-variant/50 mx-auto"></div>
 </div>
+</section>
+<!-- Details / Bento Grid Layout -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop px-gutter bg-surface-container-low border-y border-outline-variant/20 fade-in-section">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Date & Time Card -->
+<div class="md:col-span-5 bg-surface border border-outline-variant/30 rounded p-10 flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-secondary mb-4 uppercase tracking-widest">When</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">November 15, 2024</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Ceremony begins at 4:00 PM<br/>Reception to follow</p>
 </div>
-<!-- Architectural Tabs: Attendance Toggle -->
-<div>
-<label class="font-label-caps text-label-caps text-on-surface-variant block mb-6 uppercase tracking-widest text-center">Will you attend?</label>
-<div class="flex flex-col sm:flex-row gap-4">
-<label class="flex-1 cursor-pointer group">
-<input checked="" class="peer sr-only" id="attend-accept" name="attendance" type="radio" value="accept"/>
-<div class="border border-outline-variant py-4 px-6 text-center font-label-caps text-label-caps text-on-surface-variant peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all duration-300 ease-out group-hover:scale-[1.02] active:bg-surface-variant/50 peer-checked:active:bg-primary/90">
-                                    Joyfully Accept
-                                </div>
-</label>
-<label class="flex-1 cursor-pointer group">
-<input class="peer sr-only" id="attend-decline" name="attendance" type="radio" value="decline"/>
-<div class="border border-outline-variant py-4 px-6 text-center font-label-caps text-label-caps text-on-surface-variant peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all duration-300 ease-out group-hover:scale-[1.02] active:bg-surface-variant/50 peer-checked:active:bg-primary/90">
-                                    Regretfully Decline
-                                </div>
-</label>
-</div>
-</div>
-<!-- Dynamic Section (Assuming Accept for UI preview) -->
-<div class="space-y-12 pt-4 border-t border-outline-variant/20 transition-all duration-500 ease-in-out opacity-100 max-h-[1000px] overflow-hidden" id="dynamic-section">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div>
-<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2 uppercase tracking-widest" for="guests">Number Attending</label>
-<select class="w-full font-body-lg text-body-lg" id="guests" name="guests">
-<option value="1">One</option>
-<option value="2">Two</option>
-<option value="3">Three</option>
-<option value="4">Four</option>
-</select>
-</div>
-<div>
-<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2 uppercase tracking-widest" for="meal">Meal Preference</label>
-<select class="w-full font-body-lg text-body-lg" id="meal" name="meal">
-<option value="omnivore">Omnivore (Beef/Fish)</option>
-<option value="vegetarian">Vegetarian</option>
-<option value="vegan">Vegan</option>
-<option value="gluten-free">Gluten-Free</option>
-</select>
+<!-- Location Card -->
+<div class="md:col-span-7 bg-surface border border-outline-variant/30 rounded p-10 flex flex-col justify-center relative overflow-hidden group">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1542314831-c6a4d14b93b2?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80')] bg-cover bg-center opacity-10 group-hover:opacity-20 transition-opacity duration-700" data-alt="A minimalist architectural detail of a modern venue. Clean lines, Japandi style joinery, soft natural light casting subtle shadows on off-white walls. Warm earth tones and a sense of calm."></div>
+<div class="relative z-10">
+<span class="font-label-caps text-label-caps text-secondary mb-4 uppercase tracking-widest">Where</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">The Glasshouse</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">123 Serenity Lane, Upstate New York</p>
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary border-b border-primary pb-1 hover:text-secondary hover:border-secondary transition-colors" href="#">
+                                View Map <span class="material-symbols-outlined text-[16px]" data-icon="east">east</span>
+</a>
 </div>
 </div>
-<div>
-<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2 uppercase tracking-widest" for="dietary">Specific Dietary Restrictions</label>
-<input class="w-full font-body-lg text-body-lg" id="dietary" name="dietary" placeholder="e.g., Peanut allergy, no shellfish" type="text"/>
-</div>
-<!-- Plus One (Hidden by default, shown conditionally via CSS or JS in a real app, shown here for the edit request) -->
-<div class="transition-all duration-500 ease-in-out">
-<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2 uppercase tracking-widest" for="plus-one">Plus One Name (if applicable)</label>
-<input class="w-full font-body-lg text-body-lg" id="plus-one" name="plus-one" placeholder="Guest Name" type="text"/>
 </div>
 </div>
-<!-- Personal Touch -->
-<div class="pt-4 border-t border-outline-variant/20 transition-all duration-500 ease-in-out" id="note-section">
-<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2 uppercase tracking-widest" for="note">Song Request / Note to the Couple</label>
-<textarea class="w-full font-body-lg text-body-lg resize-none" id="note" name="note" placeholder="I promise to dance if you play..." rows="3"></textarea>
+</section>
+<!-- Countdown / Minimalist -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop px-gutter text-center fade-in-section">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-12">The Countdown</h3>
+<div class="flex justify-center gap-8 md:gap-16 font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-secondary opacity-80" id="countdown">
+<div class="flex flex-col items-center">
+<span id="days">00</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-2">Days</span>
 </div>
-<!-- Submit -->
-<div class="pt-8 text-center">
-<button class="bg-primary text-on-primary font-label-caps text-label-caps px-12 py-5 tracking-[0.15em] uppercase hover:opacity-80 transition-opacity duration-300 w-full md:w-auto" id="submit-btn" type="submit">
-                            Submit RSVP
-                        </button>
+<div class="flex flex-col items-center">
+<span id="hours">00</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-2">Hours</span>
 </div>
-</form>
-</div>
-<div class="mt-12 text-center text-on-surface-variant/60 font-body-md text-body-md">
-<p>Having trouble? Contact us at <a class="border-b border-on-surface-variant/60 hover:text-primary hover:border-primary transition-colors" href="mailto:hello@nineandtom.com">hello@nineandtom.com</a></p>
+<div class="flex flex-col items-center">
+<span id="mins">00</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-2">Mins</span>
 </div>
 </div>
+</section>
 </main>
-<!-- Footer JSON Implementation -->
-<footer class="w-full py-20 bg-surface-container-low dark:bg-surface-dim border-t border-outline-variant/20 flat no shadows">
+<!-- Footer -->
+<footer class="w-full py-20 bg-surface-container-low dark:bg-surface-dim border-t border-outline-variant/20">
 <div class="flex flex-col items-center gap-base max-w-container-max mx-auto px-gutter">
-<!-- Brand Logo in Footer -->
-<div class="font-headline-sm text-headline-sm text-primary mb-6">
-                NINE &amp; TOM
-            </div>
-<!-- Footer Links -->
-<ul class="flex space-x-8 mb-8">
-<li><a class="font-body-md text-body-md text-on-secondary-container/70 hover:text-primary transition-colors Subtle fade on hover" href="#">Travel Info</a></li>
-<li><a class="font-body-md text-body-md text-on-secondary-container/70 hover:text-primary transition-colors Subtle fade on hover" href="#">FAQ</a></li>
-<li><a class="font-body-md text-body-md text-on-secondary-container/70 hover:text-primary transition-colors Subtle fade on hover" href="#">Contact</a></li>
-</ul>
-<!-- Copyright -->
-<div class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim text-center tracking-wide uppercase text-xs">
+<span class="font-headline-sm text-headline-sm text-primary mb-4">NINE &amp; TOM</span>
+<div class="flex gap-6 mb-8">
+<a class="font-body-md text-body-md text-on-secondary-container/70 hover:text-primary transition-colors" href="#">Travel Info</a>
+<a class="font-body-md text-body-md text-on-secondary-container/70 hover:text-primary transition-colors" href="#">FAQ</a>
+<a class="font-body-md text-body-md text-on-secondary-container/70 hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<p class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim text-center">
                 © 2024 NINE &amp; TOM. CELEBRATING TWO JOURNEYS BECOMING ONE.
-            </div>
+            </p>
 </div>
 </footer>
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const form = document.getElementById('rsvp-form');
-        const successMessage = document.getElementById('success-message');
-        const attendAccept = document.getElementById('attend-accept');
-        const attendDecline = document.getElementById('attend-decline');
-        const dynamicSection = document.getElementById('dynamic-section');
+        // Parallax Effect for Hero Image
+        const parallaxContainer = document.getElementById('parallax-container');
+        const heroImage = document.getElementById('hero-image');
 
-        // Toggle dynamic section based on attendance
-        const toggleDynamicSection = () => {
-            if (attendAccept.checked) {
-                dynamicSection.style.opacity = '1';
-                dynamicSection.style.maxHeight = '1000px';
-                dynamicSection.style.pointerEvents = 'auto';
-            } else {
-                dynamicSection.style.opacity = '0';
-                dynamicSection.style.maxHeight = '0';
-                dynamicSection.style.pointerEvents = 'none';
-            }
+        if (parallaxContainer && heroImage && window.matchMedia("(min-width: 768px)").matches) {
+            parallaxContainer.addEventListener('mousemove', (e) => {
+                const { left, top, width, height } = parallaxContainer.getBoundingClientRect();
+                const x = (e.clientX - left) / width - 0.5;
+                const y = (e.clientY - top) / height - 0.5;
+                
+                // Subtle movement
+                heroImage.style.transform = `scale(1.1) translate(${x * 20}px, ${y * 20}px)`;
+            });
+
+            parallaxContainer.addEventListener('mouseleave', () => {
+                heroImage.style.transform = 'scale(1.1) translate(0, 0)';
+            });
+        }
+
+        // Fade in observer
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
         };
 
-        attendAccept.addEventListener('change', toggleDynamicSection);
-        attendDecline.addEventListener('change', toggleDynamicSection);
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
 
-        // Simulate form submission
-        form.addEventListener('submit', (e) => {
-            e.preventDefault(); // Prevent actual submission
-            
-            // Fade out form, fade in success message
-            form.style.opacity = '0';
-            form.style.pointerEvents = 'none';
-            
-            setTimeout(() => {
-                successMessage.style.opacity = '1';
-                successMessage.style.pointerEvents = 'auto';
-            }, 500); // Wait for form to fade out
+        document.querySelectorAll('.fade-in-section').forEach((section) => {
+            observer.observe(section);
         });
-    });
-</script>
+
+        // Simple Countdown Logic (Target: Nov 15, 2024)
+        const targetDate = new Date("Nov 15, 2024 16:00:00").getTime();
+        
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance < 0) {
+                document.getElementById("countdown").innerHTML = "<div class='text-primary'>Happily Married</div>";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+            document.getElementById("days").innerText = String(days).padStart(2, '0');
+            document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+            document.getElementById("mins").innerText = String(minutes).padStart(2, '0');
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Navbar blur effect on scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-sm');
+            } else {
+                navbar.classList.remove('shadow-sm');
+            }
+        });
+    </script>
 </body></html>
